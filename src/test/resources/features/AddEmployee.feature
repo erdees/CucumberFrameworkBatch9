@@ -13,7 +13,7 @@ Feature: Adding employees
 
   @smoke
   Scenario: Adding employee from add employee page via feature file
-    And user enters first name "Yulia123" middle name "MS" and last name "Yulia456"
+    And user enters first name "Zhmishenko" middle name "enotik" and last name "Valery"
     And user clicks on save button option
     Then employee added successfully
 
@@ -42,7 +42,7 @@ Feature: Adding employees
     When user adds multiple employees from excel file from "newdata" sheet and verify they are added
   @db @regression
   Scenario: Adding employee and Database testing
-    When user enters first name "Yulia123" middle name "MS" and last name "Yulia456"
+    When user enters first name "Zhmishenko" middle name "enotik" and last name "Valery"
     And capture employeeId
     And user clicks on save button option
     Then query the HRMS database
@@ -50,7 +50,7 @@ Feature: Adding employees
 
     @db
     Scenario: Add the employee and testing it from the backend
-      When user enters first name "Yulia123" middle name "MS" and last name "Yulia456"
+      When user enters first name "Zhmishenko" middle name "enotik" and last name "Valery"
       And capture employeeId
       And user clicks on save button option
       Then query the HRMS database
